@@ -18,8 +18,23 @@ This is how Supervised Learning works:
 ![sl](https://github.com/yinyuWu/Coursera-ML-AndrewNg-Notes/blob/master/images/ad0718d6e5218be6e6fce9dc775a38e6.png)
 
 
-### 1.2 Linear Regression
-Predict a new value(y) according to a linear model.
-Eg:
-Predict 'house price' given the 'size of the house'
+### 1.2 Univariate Linear Regression
+The core idea is to obtain a line that best fits the data. The best fit line is the one for which total prediction error (MSE) are as small as possible. Error is the distance between the point to the regression line.
 
+
+![mse](https://i.imgur.com/vB3UAiH.jpg)
+
+Eg:
+Predict 'house price' given the 'size of the house', y = f(x) = b<sub>1</sub>x + b<sub>0</sub>(y=value of house, x=size of house).
+
+What we need to find is b<sub>0</sub> and b<sub>1</sub>.
+
+Coefficient Formula:
+
+![coefficient](https://wikimedia.org/api/rest_v1/media/math/render/svg/8d2945202d09869511723ad4b0dfe5926cc3d2a0)
+
+### 1.3 Multivariate Linear Regression
+
+![multi](https://wikimedia.org/api/rest_v1/media/math/render/svg/8119b3ed1259aa8ff15166488548104b50a0f92e)
+
+![multico](https://wikimedia.org/api/rest_v1/media/math/render/svg/6732e88e94d90d9e2ff8415882cb4ab1605790cb)
