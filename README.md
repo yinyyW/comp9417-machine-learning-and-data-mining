@@ -6,7 +6,7 @@ comp9417 machine learning and data mining notes and work
 ### 1.1 Supervised Learning
 How to predict the house price given by its size?
 1. Collect statistics -> Each house's preice and its size, then we have a table:
-![table house price]（https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/raw/master/images/44c68412e65e62686a96ad16f278571f.png）
+![table house price](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/raw/master/images/44c68412e65e62686a96ad16f278571f.png)
 2. Find the relationship between these two variables, which means we need to find a function y = f(x) according to the table.
 
 ![learning](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes/raw/master/images/8e76e65ca7098b74a2e9bc8e9577adfc.png)
