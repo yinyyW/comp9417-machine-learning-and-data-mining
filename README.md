@@ -38,3 +38,26 @@ Coefficient Formula:
 ![multi](https://wikimedia.org/api/rest_v1/media/math/render/svg/8119b3ed1259aa8ff15166488548104b50a0f92e)
 
 ![multico](https://wikimedia.org/api/rest_v1/media/math/render/svg/6732e88e94d90d9e2ff8415882cb4ab1605790cb)
+
+
+## Week 2 Classification
+### 2.1 Lazy Learners
+Lazy learners simply store the training data and wait until a testing data appear. When it does, classification is conducted based on the most related data in the stored training data. Compared to eager learners, lazy learners have less training time but more time in predicting.
+
+Ex. k-nearest neighbor, Case-based reasoning
+
+### 2.2 Eager Learners
+Eager learners construct a classification model based on the given training data before receiving data for classification. It must be able to commit to a single hypothesis that covers the entire instance space. Due to the model construction, eager learners take a long time for train and less time to predict.
+
+Ex. Decision Tree, Naive Bayes, Artificial Neural Networks
+
+### 2.3 K-nearest neighbor
+In k-NN classification, the output is a class membership. An object is classified by a plurality vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor
+
+Thus, we need to find a formula to measure the distance.
+
+Minkowski Distance:
+
+![minkowski distance](https://wikimedia.org/api/rest_v1/media/math/render/svg/4060cc840aeab9e41b5e47356088889e2e7a6f0f)
+
+The 2-norm refers to Euclidean Distance, and the 1-norm refers to Manhattan Distance. If p is infinitely large, distance is called Chebyshev distance.
