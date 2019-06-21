@@ -70,3 +70,6 @@ h<sub>MAP</sub> = arg max(P(h|D))
 Learning a real valued function: maximum likelihood hypothesis h<sub>ML</sub> is the one that minimises the sum of squared error.
 
 ![maxlikelyhood](https://cdn-images-1.medium.com/max/1600/1*t4zrihvhtlZJZsvcX3jRjg.png)
+
+multinomial Bernoulli distribution:
+For the i-th word in our vocabulary we have a random variable Xi governed by a Bernoulli distribution. The joint distribution over the bit vector X = (X1, . . . , Xk) is called a multivariate Bernoulli distribution.
