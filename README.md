@@ -61,3 +61,12 @@ Minkowski Distance:
 ![minkowski distance](https://wikimedia.org/api/rest_v1/media/math/render/svg/4060cc840aeab9e41b5e47356088889e2e7a6f0f)
 
 The 2-norm refers to Euclidean Distance, and the 1-norm refers to Manhattan Distance. If p is infinitely large, distance is called Chebyshev distance.
+
+### 2.4 Bayesian
+h<sub>MAP</sub> = arg max(P(h|D))
+
+![bay_map](https://wikimedia.org/api/rest_v1/media/math/render/svg/874397c7e77a6d91ce7e04550c62d3b582248f91)
+
+Learning a real valued function: maximum likelihood hypothesis h<sub>ML</sub> is the one that minimises the sum of squared error.
+
+![maxlikelyhood](https://cdn-images-1.medium.com/max/1600/1*t4zrihvhtlZJZsvcX3jRjg.png)
