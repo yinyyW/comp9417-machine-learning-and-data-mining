@@ -80,3 +80,6 @@ Every word position in an e-mail corresponds to a categorical variable with k ou
 ### 2.5 Naive Bayes Classifier
 D = (x, c) = <(x<sub>1</sub>, x<sub>2</sub>,...)(features), c(class)>
 Learn P(C|X)
+
+Continuous: Gaussian NB
+Discrete: Multinomial or Multivariate
