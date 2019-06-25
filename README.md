@@ -76,3 +76,7 @@ For the i-th word in our vocabulary we have a random variable Xi governed by a B
 
 multinomial distribution:
 Every word position in an e-mail corresponds to a categorical variable with k outcomes, where k is the size of the vocabulary. The multinomial distribution manifests itself as a count vector
+
+### 2.5 Naive Bayes Classifier
+D = (x, c) = <(x<sub>1</sub>, x<sub>2</sub>,...)(features), c(class)>
+Learn P(C|X)
