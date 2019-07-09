@@ -84,3 +84,14 @@ Learn P(C|X)
 Continuous: Gaussian NB
 
 Discrete: Multinomial or Multivariate
+
+### Deep Learning
+
+### 3.1 Perceptron algorithm
+1. initialize weight
+2. cycle through x.
+  condition:
+    1. if wx>0, x is p, do nothing
+    2. if wx<0, x is n, do nothing
+    3. if wx>0, x is n, w<sub>i+1</sub> = w<sub>i</sub>-x
+    4. if wx<0, x is p, w<sub>i+1</sub> = w<sub>i</sub>+x
