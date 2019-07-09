@@ -89,3 +89,6 @@ Discrete: Multinomial or Multivariate
 
 ### 3.1 Perceptron algorithm
 ![perceptron_al](https://cdn-images-1.medium.com/max/1600/1*PbJBdf-WxR0Dd0xHvEoh4A.png)
+
+### 3.2 Gradient Descent
+![gradient_de](https://ml-cheatsheet.readthedocs.io/en/latest/_images/gradient_descent_demystified.png)
