@@ -1,0 +1,5 @@
+Train/test accuracy using all features:  0.979324055666004 0.8052631578947368
+Train/test accuracy for top 10K features 0.9717693836978131 0.8052631578947368
+Train/test accuracy for top 1K features 0.9538767395626243 0.6942982456140351
+Train/test accuracy for top 100 features 0.7187872763419483 0.4631578947368421
+Train/test accuracy for top 10 features 0.4092445328031809 0.18903508771929825

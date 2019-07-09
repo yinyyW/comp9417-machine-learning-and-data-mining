@@ -1,0 +1,123 @@
+--------------------------------------------------------------
+--- This file contains your answers to questions for Homework 1.
+--- Submit this file via 'give' along with your results files. 
+--- When completing your answers in this file please remember
+--- the following rules:
+--- (1) Lines starting with --- are comments. AUTOMARKING WILL
+---     IGNORE THEM. To select your answer for a given question
+---     you need to delete the --- on the corresponding line.
+--- (2) Lines starting with *** are used by automarking. DO NOT
+---     REMOVE OR MODIFY ANY OF THESE LINES UNLESS EXPLICTLY
+---     INSTRUCTED TO DO SO.
+--------------------------------------------------------------
+*** COMP9417 19T2: Homework 1 answers
+*** Last revised: Thu Jun 27 21:06:09 AEST 2019
+--- 
+--- Please add your details on the next two lines.
+*** Student Name: YINYU WU
+*** Student Number: 5135190
+--------------------------------------------------------------
+
+*** ANSWERS:
+---  Please provide answers to each question as specified. Other
+---  text will be ignored. Please only uncomment the line containing
+---  your answers and do not change any other text. Each question
+---  should have exactly ONE answer. Any questions with more than
+---  one answer uncommented will receive ZERO marks. For each question
+---  your answers should reflect your knowledge of the learning algorithms
+---  applied, and the results obtained on the datasets used.
+
+--------------------------------------------------------------
+*** QUESTION 1
+--- For this question "results" means the results you saved in "q1.out".
+
+*** Question 1(a) [1 mark]
+
+--- Looking at the results for BOTH the Nearest Neighbour and
+--- Decision Tree learning algorithms over all the datasets, I
+--- observed the following regarding a possible "learning curve"
+--- effect due to increasing the size of the training set:
+
+--- (1) on some datasets error is reduced, i.e., some show a learning curve
+ (2) on most datasets error is reduced, i.e., most show a learning curve
+--- (3) on all datasets error is reduced, i.e., all show a learning curve
+--- (4) error was basically unchanged, i.e., no learning curve
+--- (5) Decision Trees are better than Nearest Neighbour learning algorithms 
+
+*** Question 1(b) [4 marks]
+--- First, insert your error reduction numbers in the table below (refer to
+--- the assignment notebook for details on how to calculate these).
+--- In particular, in each of the 4 cells in the table, substitute
+--- the respective numbers you calculated for the phrase "My number".
+--- PLEASE ENSURE YOU DO NOT MODIFY ANY OTHER PART OF THE TABLE ! 
+--- The completed table is worth 2 marks.
+
+********************************************************************************
+***                 Mean error reduction relative to default
+********************************************************************************
+*** Algorithm            After 10% training	After 100% training
+********************************************************************************
+*** Nearest Neighbour      23.60              47.77      
+*** Decision Tree          39.19              69.69      
+********************************************************************************
+
+--- The rest of this question has two multiple-choice parts, each worth 1 mark.
+
+*** Part 1:
+--- Comparing the Nearest Neighbour and Decision Tree learning
+--- algorithms based on your numbers on mean error reduction
+--- relative to default on only 10% of the data I observe that:
+
+ (1) 10% of the data is not enough for learning a good model
+--- (2) only the Decision Tree learner reduces error with 10% of the data
+--- (3) only the Nearest Neighbour learner reduces error with 10% of the data
+--- (4) both algorithms learn models that reduce error by more than 20% with 10% of the data
+
+*** Part 2:
+--- From my knowledge of how the Nearest Neighbour and Decision Tree
+--- learning algorithms work I suggest the following explanation for
+--- the results in the table:
+
+--- (1) Decision Trees cannot reduce error enough
+--- (2) Nearest Neighbour cannot reduce error enough
+--- (3) Nearest Neighbour may be overfitting some of the datasets 
+ (4) Decision Trees may be overfitting some of the datasets
+--- (5) Deep Learning will definitely do better with less data
+
+--------------------------------------------------------------
+*** QUESTION 2 [2 marks]
+--- For this question "results" means the results you saved in "q2.out".
+--- This question has two multiple-choice parts, each worth 1 mark.
+
+*** Part 1:
+--- From your knowledge of how text data is represented in machine
+--- learning as a "bag-of-words", and referring to the
+--- CountVectorizer pre-processing method in the sklearn
+--- documentation, answer the following question about how we have
+--- used it to transform the original text data. For this text
+--- classification problem, CountVectorizer pre-processing was
+--- applied to the snippet data to:
+
+--- (1) generate the vocabulary and count the frequency of words independently for the training and test sets
+--- (2) generate the vocabulary and count the frequency of words overall for the combined training and test sets
+ (3) generate the vocabulary overall for the combined training and test sets, and count the frequency of words independently for the training and test sets
+--- (4) generate the vocabulary independently for the training and test sets, and count the frequency of words overall for the combined training and test sets
+
+*** Part 2:
+--- Given the large numbers of words and tokens that apear in
+--- typical natural language data, text classification learning
+--- problems are usually very high-dimensional. Feature selection is
+--- designed to improve the classification performance of machine
+--- learning algorithms by reducing the number of irrelevant
+--- features that could be included in a predictive model.  From
+--- your results, select an explanation for the effect of feature
+--- selection on the performance of Multinomial Naive Bayes on the
+--- snippet classification dataset:
+
+--- (1) Multinomial Naive Bayes is rarely used for text classification
+(2) the class-conditional probabilities for most of the words are relevant to classification 
+--- (3) text classification is not possible using just the class-conditional probabilities of the words
+--- (4) the prior probabilities of the class labels will dominate the the class-conditional probabilities of the words
+
+*** END
+--------------------------------------------------------------
