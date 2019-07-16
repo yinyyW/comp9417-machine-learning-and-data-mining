@@ -92,3 +92,18 @@ Discrete: Multinomial or Multivariate
 
 ### 3.2 Gradient Descent
 ![gradient_de](https://ml-cheatsheet.readthedocs.io/en/latest/_images/gradient_descent_demystified.png)
+
+
+### Kernel </br>
+### 1. Duality
+Linearly separable data. Dual view of Perceptron + SVM
+Dual Perceptron learning:</br>
+![kernel_dual](https://wikimedia.org/api/rest_v1/media/math/render/svg/003c2a1743fb20ecb7bc70b1bf48bc88bde5dfbd)
+
+
+### 2. Kernel Trick
+How to deal with non-separable data
+![svm1](https://wikimedia.org/api/rest_v1/media/math/render/svg/90e0fa283c9e642c9c11b22da45efa30b06944a9)</br>
+![svm2](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SVM_margin.png/600px-SVM_margin.png)</br>
+
+solve: minimize |w| subject to ![svm3](https://wikimedia.org/api/rest_v1/media/math/render/svg/94c99827acb10edd809df63bb86ca1366f01a8ac) (by Lagrange multiplier)
