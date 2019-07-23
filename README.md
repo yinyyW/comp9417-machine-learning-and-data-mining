@@ -109,3 +109,35 @@ How to deal with non-separable data
 solve: minimize |w| subject to ![svm3](https://wikimedia.org/api/rest_v1/media/math/render/svg/94c99827acb10edd809df63bb86ca1366f01a8ac) (by Lagrange multiplier)
 
 k(x1, x2) = (1+x1·x2)<sup>2</sup>
+
+### Ensemble </br>
+### 1. Bagging</br>
+
+Data1 ---> Model1 ----> Prediction1 (weak) </br>
+Data2 ---> Model2 ----> Prediction2 (weak) </br>
+...</br>
+Data<sub>T</sub>----> Model<sub>T</sub> --->prediction (weak)
+
+Vote ---> Prediction
+
+
+### 2. Random Forest
+
+Data(sample data & sample feature)
+
+## 3. Boosting(Adaptive Boost)
+
+weak ----> strong
+
+
+Form a large set of simple features</br>
+Initialize weights for training images</br>
+<div>
+For T rounds</br>
+Normalize the weights</br>
+For available features from the set, train a classifier using a single feature and evaluate the training error</br>
+Choose the classifier with the lowest error</br>
+Update the weights of the training images: increase if classified wrongly by this classifier, decrease if correctly</br>
+Form the final strong classifier as the linear combination of the T classifiers (coefficient larger if training error is small)</br>
+</div>
+
