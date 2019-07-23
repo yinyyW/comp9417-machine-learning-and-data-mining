@@ -107,3 +107,5 @@ How to deal with non-separable data
 ![svm2](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SVM_margin.png/600px-SVM_margin.png)</br>
 
 solve: minimize |w| subject to ![svm3](https://wikimedia.org/api/rest_v1/media/math/render/svg/94c99827acb10edd809df63bb86ca1366f01a8ac) (by Lagrange multiplier)
+
+k(x1, x2) = (1+x1·x2)<sup>2</sup>
