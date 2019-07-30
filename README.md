@@ -141,6 +141,17 @@ Update the weights of the training images: increase if classified wrongly by thi
 Form the final strong classifier as the linear combination of the T classifiers (coefficient larger if training error is small)</br>
 </div>
 
+0. c0 = 0</br>
+1. w1i = 1/N</br>
+2. for m=1...M:</br>
+3.choose weak learner km that minimize error</br>
+4. alpham = (1/2)log((1-e)/e)</br>
+5. calculate zm = zm*sqrt(em*(1-em))</br>
+6. w(i)(m+1) = w(i)(m)/z(m)</br>
+7. C= C(m-1)+alpham*Cm
+
+
+
 ### unsupervised learning
 K-mass clusters:
 
