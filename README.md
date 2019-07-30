@@ -141,3 +141,11 @@ Update the weights of the training images: increase if classified wrongly by thi
 Form the final strong classifier as the linear combination of the T classifiers (coefficient larger if training error is small)</br>
 </div>
 
+### unsupervised learning
+K-mass clusters:
+
+Assume k = 3</br>
+1.init clusters center randomly</br>
+2.Assign points X to clusters</br>
+3.recompute cluster's center</br>
+4.repeat 2, 3 until cluster centers don't change</br>
