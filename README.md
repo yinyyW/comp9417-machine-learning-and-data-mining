@@ -183,3 +183,9 @@ Find-S:
 <t>3.For each ai in h:</br>
 <t><t>4. If a not satisfied, replace ai in h by next general constraint.</br>
 5. return h</br>
+
+*Candidate Elimination: start from the most specific and general hypothesis simultaneously.
+
+Tool2:epsilon-Exhausting VS(h,d) --> every h belong to VS(hd) has true error < epsilon </br>
+Theorem: if |H| < infinity, D = {<xi, c(xi)>}(i=1..M) with examples drawn from P, then epsilon = [0, 1]. Probability 
+that VS(hd) is not epsilon-exhaused is less or equal to |H|e^(-ep*M)
