@@ -188,4 +188,7 @@ Find-S:
 
 Tool2:epsilon-Exhausting VS(h,d) --> every h belong to VS(hd) has true error < epsilon </br>
 Theorem: if |H| < infinity, D = {<xi, c(xi)>}(i=1..M) with examples drawn from P, then epsilon = [0, 1]. Probability 
-that VS(hd) is not epsilon-exhaused is less or equal to |H|e^(-ep*M)
+that VS(hd) is not epsilon-exhaused is less or equal to |H|e^(-ep*M)</br>
+
+VC dimension complexity of H: Dichotomy of Set S is partition of S into 2 distinct subset. </br>
+Shattering a set of instances S = {<x>} by H if for every dichotomy of S there is h consistent.
