@@ -1,0 +1,101 @@
+
+
+                        S A M P L E    R E P O R T
+
+
+
+                       Learning Pokemon Classifiers
+                             Mac Hine Learner
+                           COMP9417, Assignment 2
+
+
+Introduction
+
+Pokemon cards have become very valuable.  It is becoming economically
+worthwhile to have an automated method of classifying digital images of various
+cards (Smith and Jones, 2008).  There are now several repositories of such
+images on the web, one of which was used in this project.
+...
+
+The goal of this project was to implement a small set of features
+designed specifically to capture properties of Pokemon cards,
+and use these in addition to standard image-processing features 
+to learn classifiers using at least two different classifier
+learning algorithms.
+...
+
+
+Domain specific image features
+
+Pokemon cards have certain properties such as faces of characters which
+determine the particular characters on a card. Three new features were
+generated for this project: (1) number of characters on card (2) mean distance
+from centre of eyes to center of mouth for all characters (3) mean value of
+pixels within faces of all characters. 
+...
+
+
+Method
+
+A sample of 100 images was obtained from the major Pokemon repository at
+http:/www.pokemonrepository.org. These 100 images were randomly sampled from a
+larger set downloaded by the author. All duplicates and non-Pokemon card images
+were first removed from this larger set. Pre-processing to obtain instances was
+carried out on all images using the standard image processing tools at
+http:/www.imageprocessingtools.org. Following this values for the new
+features were generated for the training set examples to form a second training
+set with the standard plus the new features.
+...
+
+Two types of classification algorithm were investigated in this project, namely
+decision-trees and back-propagation neural networks (Mitchell, 1997).
+...
+
+
+Results
+
+The classifiers were compared using both the training set with
+only standard features and the extended training set with standard
+features plus the new features. The results from 10-fold cross-validation
+are in Table 1. The learning time for classifiers is shown in the graph
+of Figure 2.
+...
+
+
+Discussion
+
+As can be seen from the results in Table 1, including the new features
+clearly improves classification performance for both decision trees
+and neural network. This difference is significant according to
+a paired t-test.
+...
+
+
+Related work
+
+To the best of our knowledge on-one else has attempted this task before.
+The approach is related however to the work of Smith and Jones (2008)
+who applied classifier learning to images of baseball cards.
+
+...
+
+
+Conclusions
+
+From the results it can be concluded that the new features specifically
+designed for the task of classifying Pokemon cards led to improved
+predictive accuracy on this task.
+...
+
+
+Acknowledgements
+
+[if required]
+
+
+References
+
+Mitchell, T. "Machine Learning". McGraw Hill, 1997.
+
+Smith, J, and Jones, S. "Classifying images of baseball cards". Journal of
+Baseball, 2008, Volume 27, 119-133.

@@ -1,0 +1,104 @@
+--------------------------------------------------------------
+--- This file contains your answers to questions for Homework 2.
+--- Ensure this file is formatted and saved as plain text only. 
+--- Submit this file via 'give'. 
+--- When completing your answers in this file please remember
+--- the following syntax rules:
+--- (1) Lines starting with --- are comments. AUTOMARKING WILL
+---     IGNORE THEM. To select your answer for a given question
+---     you need to delete the --- on the corresponding line.
+--- (2) Lines starting with *** are used by automarking. DO NOT
+---     REMOVE OR MODIFY ANY OF THESE LINES UNLESS EXPLICTLY
+---     INSTRUCTED TO DO SO.
+--------------------------------------------------------------
+*** COMP9417 19T2: Homework 2 answers
+*** Last revised: Fri Jul 26 17:17:14 AEST 2019
+--- 
+--- Please add your details on the next two lines.
+*** Student Name: Yinyu Wu
+*** Student Number: 5135190
+--------------------------------------------------------------
+
+*** ANSWERS:
+---  Please provide answers to each question as specified. Other
+---  text will be ignored. Please only uncomment lines containing
+---  your answers and do not change any other text. Each multiple-choice
+---  question should have exactly ONE answer. Any questions with more than
+---  one answer uncommented will receive ZERO marks. For each question
+---  your answers should reflect your knowledge of the learning algorithms
+---  applied, and any results obtained on datasets used.
+
+--------------------------------------------------------------
+*** QUESTION 1  [Total: 3 marks]
+--- To answer this question, first run the classifiers and save the
+--- output below, then answer the multiple-choice questions below.
+
+*** Question 1(a) [1 mark] 
+--- Copy/paste below the output from running the code in the notebook.
+--- DO NOT EDIT the table in any way !!!
+                                             Decision Tree Results                                              
+----------------------------------------------------------------------------------------------------------------
+    Dataset     |     Default      |        0%        |       20%        |       50%        |       80%        |
+----------------------------------------------------------------------------------------------------------------
+
+balance-scale   |  36.70% ( 2)     |  76.06% ( 2)     |  71.28% (12)     |  65.43% (27)     |  18.09% (27)     |
+
+primary-tumor   |  25.49% ( 2)     |  37.25% (12)     |  42.16% (12)     |  43.14% (12)     |  26.47% ( 7)     |
+
+glass           |  44.62% ( 2)     |  69.23% ( 7)     |  66.15% (22)     |  35.38% (17)     |  29.23% (17)     |
+
+heart-h         |  35.96% ( 2)     |  67.42% ( 7)     |  78.65% (22)     |  56.18% (17)     |  20.22% (27)     |
+
+
+*** Question 1(b) [1 mark]
+--- In sklearn's decision tree learning implementation, the parameter
+--- "min_samples_leaf" places a lower bound on the number of training
+--- set examples that can appear at any leaf of the decision tree. This
+--- data is used during learning to assign a decision to that leaf,
+--- e.g., by assigning the leaf to predict the majority class of the
+--- training set examples at the leaf. By increasing the value of the
+--- "min_samples_leaf" parameter we can expect this to:
+
+--- (1) decrease overfitting by decreasing the number of examples at any leaf
+ (2) decrease overfitting by increasing the number of examples at any leaf
+--- (3) increase overfitting by decreasing the number of examples at any leaf
+--- (4) increase overfitting by increasing the number of examples at any leaf
+
+*** Question 1(c) [1 mark]
+--- We can ask the question: for datasets with medium levels of added
+--- noise, has the search to set the value of the "min_samples_leaf"
+--- parameter resulted in improved test set accuracy compared to the
+--- default parameter settings ?  Looking at the table, we conclude the
+--- answer is:
+
+--- (1) no
+--- (2) yes, for 1/4 of the datasets
+--- (3) yes, for 2/4 of the datasets
+ (4) yes, for 3/4 of the datasets
+--- (5) yes, for 4/4 of the datasets
+
+
+--------------------------------------------------------------
+*** QUESTION 2  [Total: 7 marks]
+
+--- For this question you must copy and paste below the code you wrote to
+--- complete the implementation of the RNN. Be sure not to introduce
+--- any changes from your final code as it ran in the notebook !!!
+
+--- setup for the current step  [2 marks]
+layer_input =  outputs.pop()
+weight = self.weights[1] if step == (self.input_size-1) else self.weights[0][:64, :]
+
+--- calculate gradients  [1 mark]
+gradients, dW, db = self.derivatives_of_hidden_layer(previous_gradients, layer_output, numpy.concatenate((layer_input, X[:, step, :]), axis=1), weight)
+
+--- update weights  [2 marks]
+self.weights[0] += self.learning_rate / X.shape[0] * dW
+self.biases[0] += self.learning_rate / X.shape[0] * db
+
+--- setup for the next step  [2 marks]
+previous_gradients = gradients
+layer_output = layer_input
+
+*** END
+--------------------------------------------------------------
